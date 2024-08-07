@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { LoginComponent } from './components/login/login.component';
 import { RestritoComponent } from './/components/restrito/restrito.component';
+import { GuardGuard } from './guard.guard';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },

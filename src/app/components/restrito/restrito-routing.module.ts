@@ -4,7 +4,7 @@ import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.co
 import { ListaProdutoComponent } from './lista-produto/lista-produto.component';
 import { AtualizaProdutoComponent } from './atualiza-produto/atualiza-produto.component';
 import { RestritoComponent } from './restrito.component';
-import { GuardGuard } from '../guard.guard';
+import { GuardGuard } from 'src/app/guard.guard';
 
 const restritoRoutes: Routes = [
     {

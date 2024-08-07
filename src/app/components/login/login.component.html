@@ -3,23 +3,23 @@
         <div class="card p-4">
             <div class="card-body">
                 <h3 class="card-title text-center mb-4">Login</h3>
-                <form name="flogin" id="loginForm" (ngSubmit)="handleLogin($event)">
+                <form name="flogin" id="loginForm">
                     <div class="mb-3">
                         <label for="email" class="form-label">
                             <img src="assets/img/icones/icone-usuario.png" alt="icone-usuario" class="form-icon">
                             Usuário
                         </label>
-                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Insira seu e-mail" required>
+                        <input type="text" class="form-control" id="usuario" name="usuario" [(ngModel)]="usuario" placeholder="Insira seu e-mail" required>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">
                             <img src="assets/img/icones/icone-cadeado.png" alt="icone-cadeado" class="form-icon">
                             Senha
                         </label>
-                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Insira sua senha" required>
+                        <input type="password" class="form-control" id="senha" name="senha" [(ngModel)]="senha" placeholder="Insira sua senha" required>
                     </div>
                     <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-custom">
+                        <button type="submit" class="btn btn-custom" (click)="fazerLogin()" >
                             Entrar
                             <img src="assets/img/icones/icone-entrar.png" alt="icone-entrar">
                         </button>

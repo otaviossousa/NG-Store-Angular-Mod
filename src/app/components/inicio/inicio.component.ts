@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Produto } from '../models/Produto.model';
 import { ProdutoService } from 'src/app/produto.service';
 
@@ -27,6 +27,7 @@ export class InicioComponent implements OnInit{
               item.id,
               item.nome,
               item.preco,
+              item.desconto,
               item.foto
             );
           }

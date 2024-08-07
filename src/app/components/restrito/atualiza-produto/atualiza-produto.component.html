@@ -1,30 +1,29 @@
 <main>
     <h1>Atualiza jogo</h1>
-      <section id="section-cadastro">
-            <form *ngIf="produto">
-                 
-                    <label for="produto">Id</label>
-                    <input type="text" class="form-control" name="id" [(ngModel)]="produto.id" readonly>
-               
-                  <br>
-                    <label for="produto">Nome do Produto</label>
-                    <input type="text" class="form-control" name="produto" [(ngModel)]="produto.nome">
-               
-                  <br>
+    <section id="section-cadastro">
+        <form *ngIf="produto">
 
-                    <label for="preco">Preço</label>
-                    <input type="number" class="form-control" name="preco" [(ngModel)]="produto.preco">
-                 
-                  <br>
-               
-                    <label for="foto">Foto</label>
-                    <input type="text" class="form-control" name="foto" [(ngModel)]="produto.foto">
-                 
-                  <br>
-               
-                    <button type="submit" class="btn btn-primary mb-3" (click)="atualizar(produto.id)">Atualizar</button>
-                 
-                </form>
-          </section>
+            <label for="produto">Id</label>
+            <input type="text" class="form-control" name="id" [(ngModel)]="produto.id" readonly>
+            <br>
 
+            <label for="produto">Nome</label>
+            <input type="text" class="form-control" name="produto" [(ngModel)]="produto.nome">
+            <br>
+
+            <label for="foto">Foto</label>
+            <input type="text" class="form-control" name="foto" [(ngModel)]="produto.foto">
+            <br>
+
+            <label for="preco">Preço</label>
+            <input type="number" class="form-control" name="preco" [(ngModel)]="produto.preco">
+            <br>
+
+            <label for="desconto">Desconto</label>
+            <input type="number" class="form-control" name="desconto" [(ngModel)]="produto.desconto">
+            <br>
+
+            <button type="submit" class="btn btn-primary mb-3" (click)="atualizar(produto.id)">Atualizar</button>
+        </form>
+    </section>
 </main>

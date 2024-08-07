@@ -11,7 +11,7 @@ import { ProdutoService } from 'src/app/produto.service';
 export class AtualizaProdutoComponent implements OnInit{
 
   public produtoId: number = 0;
-  public produto: Produto = new Produto(0,"",0,"");
+  public produto: Produto = new Produto(0,"",0,0,"");
 
   constructor(private _produtoService:ProdutoService, private _router: Router,
     private _activatedRoute:ActivatedRoute){
@@ -29,6 +29,7 @@ export class AtualizaProdutoComponent implements OnInit{
             res[0].id,
             res[0].nome,
             res[0].preco,
+            res[0].desconto,
             res[0].foto
           );
         }
@@ -37,7 +38,7 @@ export class AtualizaProdutoComponent implements OnInit{
 
     atualizar(id: number){
       this._produtoService.atualizarProduto(id,this.produto).subscribe(
-        produto => {this.produto = new Produto(0,"",0,"")},
+        produto => {this.produto = new Produto(0,"",0,0,"")},
         err => {alert("Erro ao atualizar")}
       );
 

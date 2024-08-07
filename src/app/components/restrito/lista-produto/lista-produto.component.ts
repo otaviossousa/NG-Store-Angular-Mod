@@ -30,6 +30,7 @@ export class ListaProdutoComponent implements OnInit{
               item.id,
               item.nome,
               item.preco,
+              item.desconto,
               item.foto
             );
           }
@@ -49,5 +50,4 @@ export class ListaProdutoComponent implements OnInit{
       this._router.navigate(["/restrito/lista"]);
 
   }
-
 }

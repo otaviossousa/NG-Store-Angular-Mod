@@ -1,8 +1,7 @@
-// login.component.ts
 
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { LoginService } from 'src/app/login.service';
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
@@ -10,22 +9,14 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
-    constructor(private router: Router) {}
+    usuario!: string;
+    senha!: string;
 
-    handleLogin(event: Event): void {
-        event.preventDefault(); 
+    constructor(private _loginService: LoginService, private _router: Router) { }
 
-        const usuario = (event.target as HTMLFormElement).elements.namedItem('usuario') as HTMLInputElement;
-        const senha = (event.target as HTMLFormElement).elements.namedItem('senha') as HTMLInputElement;
-
-        // Validação simples
-        if (usuario.value === 'admin' && senha.value === 'admin') {
-            alert('Login bem-sucedido!');
-            this.router.navigate(['/inicio']); 
-        } else {
-            alert('Usuário ou senha inválidos');
-            usuario.value = '';
-            senha.value = '';
-        }
+    fazerLogin() {
+        this._loginService.login(this.usuario, this.senha);
+        this._router.navigate(['/restrito/lista']);
+        this._loginService.setMostraMenu(false);
     }
 }
