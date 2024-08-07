@@ -1,0 +1,23 @@
+<table class="table">
+      <thead>
+            <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Foto</th>
+                  <th scope="col">Preço</th>
+                  <th scope="col">Editar</th>
+                  <th scope="col">Excluir</th>
+                </tr>
+          </thead>
+      <tbody>
+            <tr *ngFor="let p of produtos">
+                  <th scope="row">{{p.id}}</th>
+                  <td>{{p.nome}}</td>
+                  <td>{{p.descricao}}</td>
+                  <td><img mat-card-image src="./assets/img/{{p.foto}}" alt="produto"></td>
+                  <td>{{p.preco | currency : 'BRL'}}</td>
+                  <td><a class="btn btn-primary" routerLink="/restrito/editar/{{p.id}}" role="button">Editar</a></td>
+                  <td><a class="btn btn-danger" role="button" (click)="excluir(p.id)">Excluir</a></td>
+                </tr>
+          </tbody>
+</table>
