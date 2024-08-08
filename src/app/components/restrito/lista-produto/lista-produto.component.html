@@ -1,30 +1,34 @@
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Pasta</th>
-            <th scope="col">Foto</th>
-            <th scope="col">Preço</th>
-            <th scope="col">Desconto</th> 
-            <th scope="col">Editar</th>
-            <th scope="col">Excluir</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let p of produtos">
-            <th scope="row">{{ p.id }}</th>
-            <td>{{ p.nome }}</td>
-            <td>{{ p.pasta }}</td>
-            <td><img mat-card-image src="./assets/img/games/{{p.pasta}}/{{ p.foto }}" alt="produto"></td>
-            <td>{{ p.preco | currency: 'BRL' }}</td>
-            <td>{{ p.desconto }}</td>
-            <td>
-                <a class="btn btn-primary" routerLink="/restrito/editar/{{ p.id }}" role="button">Editar</a>
-            </td>
-            <td>
-                <a class="btn btn-danger" role="button" (click)="excluir(p.id)">Excluir</a>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<main>
+    <div class="grid-container">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">NOME</th>
+                    <th scope="col">PASTA</th>
+                    <th scope="col">FOTO</th>
+                    <th scope="col">PREÇO</th>
+                    <th scope="col">DESCONTO</th> 
+                    <th scope="col">EDITAR</th>
+                    <th scope="col">EXCLUIR</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr *ngFor="let p of produtos">
+                    <th scope="row">{{ p.id }}</th>
+                    <td>{{ p.nome }}</td>
+                    <td>{{ p.pasta }}</td>
+                    <td><img src="./assets/img/games/{{p.pasta}}/{{ p.foto }}" alt="produto"></td>
+                    <td>{{ p.preco | currency: 'BRL' }}</td>
+                    <td>{{ p.desconto }}%</td>
+                    <td>
+                        <a class="btn btn-primary" routerLink="/restrito/editar/{{ p.id }}" role="button">Editar</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-danger" role="button" (click)="excluir(p.id)">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
