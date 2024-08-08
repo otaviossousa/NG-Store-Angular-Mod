@@ -1,26 +1,31 @@
 <main>
-    <h1>Cadastrar jogo</h1>
     <section id="section-cadastro">
+        <h1> Cadastrar Produto</h1>
         <form>
-            <label for="produto">Nome</label>
-            <input type="text" class="form-control" name="produto" [(ngModel)]="produto.nome">
-            <br>
+            <div class="form-group">
+                <label for="produto">Nome</label>
+                <input type="text" class="form-control" id="produto" name="produto" [(ngModel)]="produto.nome" placeholder="Informe o nome do jogo">
+            </div>
 
-            <label for="pasta">Pasta</label>
-            <input type="text" class="form-control" name="pasta" [(ngModel)]="produto.pasta">
-            <br>
+            <div class="form-group">
+                <label for="pasta">Pasta</label>
+                <input type="text" class="form-control" id="pasta" name="pasta" [(ngModel)]="produto.pasta" placeholder="Informe a pasta do jogo">
+            </div>
 
-            <label for="foto">Foto</label>
-            <input type="text" class="form-control" name="foto" [(ngModel)]="produto.foto">
-            <br>
+            <div class="form-group">
+                <label for="foto">Foto</label>
+                <input type="text" class="form-control" id="foto" name="foto" [(ngModel)]="produto.foto" placeholder="Informe o nome da imagem ">
+            </div>
 
-            <label for="preco">Preço</label>
-            <input type="number" class="form-control" name="preco" [(ngModel)]="produto.preco">
-            <br>
+            <div class="form-group">
+                <label for="preco">Preço</label>
+                <input type="number" class="form-control" id="preco" name="preco" [(ngModel)]="produto.preco" placeholder="Informe o preço do jogo ">
+            </div>
 
-            <label for="desconto">Desconto</label>
-            <input type="number" class="form-control" name="desconto" [(ngModel)]="produto.desconto">
-            <br>
+            <div class="form-group">
+                <label for="desconto">Desconto</label>
+                <input type="number" class="form-control" id="desconto" name="desconto" [(ngModel)]="produto.desconto" placeholder="Informe o desconto em porcentagem">
+            </div>
             
             <button type="button" class="btn btn-primary mb-3" (click)="cadastrar()">Cadastrar</button>
         </form>

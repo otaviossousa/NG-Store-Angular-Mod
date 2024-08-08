@@ -1,20 +1,55 @@
+/* Estiliza o main */
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #21224e;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+   
 }
 
 h1 {
+    color: white;
     margin-top: 20px;
+    text-align: center;
 }
 
 #section-cadastro {
-    height: 100%;
-    width: 700px;
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 10px 10px;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #1e1e1e;
+    background-color: #2e2e2e;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.btn-primary {
+    background-color: #00a000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 20px auto;
+}
+
+.btn-primary:hover {
+    background-color: #007a00;
 }

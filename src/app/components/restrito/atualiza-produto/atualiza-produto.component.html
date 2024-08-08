@@ -1,33 +1,38 @@
 <main>
-    <h1>Atualiza jogo</h1>
     <section id="section-cadastro">
+        <h1> Atualizar Produto</h1>
         <form *ngIf="produto">
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text" class="form-control" id="id" name="id" [(ngModel)]="produto.id" readonly>
+            </div>
 
-            <label for="produto">Id</label>
-            <input type="text" class="form-control" name="id" [(ngModel)]="produto.id" readonly>
-            <br>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="produto.nome" placeholder="Informe o nome do jogo">
+            </div>
 
-            <label for="produto">Nome</label>
-            <input type="text" class="form-control" name="produto" [(ngModel)]="produto.nome">
-            <br>
+            <div class="form-group">
+                <label for="pasta">Pasta</label>
+                <input type="text" class="form-control" id="pasta" name="pasta" [(ngModel)]="produto.pasta" placeholder="Informe a pasta do jogo">
+            </div>
 
-            <label for="pasta">Pasta</label>
-            <input type="text" class="form-control" name="pasta" [(ngModel)]="produto.pasta">
-            <br>
+            <div class="form-group">
+                <label for="foto">Foto</label>
+                <input type="text" class="form-control" id="foto" name="foto" [(ngModel)]="produto.foto" placeholder="Informe o nome da imagem">
+            </div>
 
-            <label for="foto">Foto</label>
-            <input type="text" class="form-control" name="foto" [(ngModel)]="produto.foto">
-            <br>
+            <div class="form-group">
+                <label for="preco">Preço</label>
+                <input type="number" class="form-control" id="preco" name="preco" [(ngModel)]="produto.preco" placeholder="Informe o preço do jogo">
+            </div>
 
-            <label for="preco">Preço</label>
-            <input type="number" class="form-control" name="preco" [(ngModel)]="produto.preco">
-            <br>
-
-            <label for="desconto">Desconto</label>
-            <input type="number" class="form-control" name="desconto" [(ngModel)]="produto.desconto">
-            <br>
-
-            <button type="submit" class="btn btn-primary mb-3" (click)="atualizar(produto.id)">Atualizar</button>
+            <div class="form-group">
+                <label for="desconto">Desconto</label>
+                <input type="number" class="form-control" id="desconto" name="desconto" [(ngModel)]="produto.desconto" placeholder="Informe o desconto em porcentagem">
+            </div>
+            
+            <button type="button" class="btn btn-primary mb-3" (click)="atualizar(produto.id)">Atualizar</button>
         </form>
     </section>
 </main>
