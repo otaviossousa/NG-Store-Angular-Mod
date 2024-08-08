@@ -11,6 +11,7 @@ Este projeto foi desenvolvido como parte do teste Framework Front-End com Consum
 
 ## Protótipos
 
+
 Os protótipos de baixa e alta fidelidade do site foram criados na ferramenta Figma. Você pode visualizar e explorar os protótipos através dos links abaixo:
 
 - [Protótipo de Baixa e Alta Fidelidade](https://www.figma.com/design/5RRgghDZbxijlLHDcVVjv0/Senai---Prototipo-Alta-Fidelidade-2?m=auto&t=qj4goIqVgvgrNqxe-6)
