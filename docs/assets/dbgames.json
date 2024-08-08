@@ -1,0 +1,44 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Dragon Ball Sparking! Zero",
+      "pasta": "lancamentos",
+      "preco": 220,
+      "desconto": 3,
+      "foto": "dragon-ball-sparking-zero.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Metaphor ReFantazio",
+      "pasta": "lancamentos",
+      "preco": 155.87,
+      "desconto": 39,
+      "foto": "metaphor-refantazio.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Silent Hill 2",
+      "pasta": "lancamentos",
+      "preco": 342.81,
+      "desconto": 13,
+      "foto": "silent-hill-2.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Sonic X Shadow Generation",
+      "pasta": "lancamentos",
+      "preco": 223.87,
+      "desconto": 6,
+      "foto": "sonic-shadow-generation.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "God of War Ragnarok",
+      "pasta": "lancamentos",
+      "preco": 234,
+      "desconto": 43,
+      "foto": "god-of-war-ragnarok.jpg"
+    }
+  ]
+}

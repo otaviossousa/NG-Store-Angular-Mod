@@ -9,7 +9,7 @@ import { Produto } from './components/models/Produto.model';
 
 export class ProdutoService {
 
-  private url: string = "./dbgames.json";
+  private url: string = "assets/dbgames.json";
   
   constructor(private _httpClient: HttpClient) { }
 
