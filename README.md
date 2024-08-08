@@ -11,19 +11,14 @@ Este projeto foi desenvolvido como parte do teste Framework Front-End com Consum
 
 Visualize aqui o [NG-Store](NG-Store-Angular-Mod.pdf) se você não pretende rodar a API localmente utilizando o comando 'json-server --watch dbgames.json' para a visualização dos produtos nos links acima.
 
+- **Acesso a Página de Login**: Entre como administrador para visualizar as áreas restritas: usuário: **admin** e senha: **admin** para testes.
 
 ## Protótipos
-
 
 Os protótipos de baixa e alta fidelidade do site foram criados na ferramenta Figma. Você pode visualizar e explorar os protótipos através dos links abaixo:
 
 - [Protótipo de Baixa e Alta Fidelidade](https://www.figma.com/design/5RRgghDZbxijlLHDcVVjv0/Senai---Prototipo-Alta-Fidelidade-2?m=auto&t=qj4goIqVgvgrNqxe-6)
 
-## Funcionalidades
-
-- **Página Principal**: Exibe produtos em destaque, banners, categorias e uma barra de pesquisa.
-- **Página de Login**: Permite que os usuários façam login para acessar suas contas, o usuário : **admin** e senha: **admin** para testes
-- **Responsividade**: O site é responsivo e ajusta-se a diferentes tamanhos de tela.
 
 ## Tecnologias Utilizadas
 
