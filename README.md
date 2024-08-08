@@ -6,8 +6,11 @@ Este projeto foi desenvolvido como parte do teste Framework Front-End com Consum
 
 ## Visualização do Projeto
 
-- [Site Principal](https://otaviossousa.github.io/NG-Store-Angular/inicio)
-- [Página de Login](https://otaviossousa.github.io/NG-Store-Angular/login)
+- [Site Principal](https://otaviossousa.github.io/NG-Store-Angular-Mod/inicio)
+- [Página de Login](https://otaviossousa.github.io/NG-Store-Angular-Mod/login)
+
+Visualize aqui o [NG-Store](NG-Store-Angular-Mod.pdf) para quem nao pretende rodar a API localmente utilizando o comando 'json-server --watch dbgames.json'
+
 
 ## Protótipos
 
