@@ -1,14 +1,7 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <span>
-            <a routerLink="/restrito/lista">Listar Produtos</a>
-        </span>
-        <span>
-            <a routerLink="/restrito/cadastro">Cadastrar Produto</a>
-        </span>
-        <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="logout()">
-            <span class="material-icons">logout</span>
-        </button>
-    </mat-toolbar-row>
-</mat-toolbar>
+<main>
+    <div class="button-container">
+        <a routerLink="/restrito/lista" class="btn btn-outline-primary">Listar Produtos</a>
+        <a routerLink="/restrito/cadastro" class="btn btn-outline-success">Cadastrar Produto</a>
+        <button class="btn btn-outline-light" (click)="logout()">Sair</button>
+    </div>
+</main>
