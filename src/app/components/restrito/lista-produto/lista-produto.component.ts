@@ -29,6 +29,7 @@ export class ListaProdutoComponent implements OnInit{
             return new Produto(
               item.id,
               item.nome,
+              item.pasta,
               item.preco,
               item.desconto,
               item.foto

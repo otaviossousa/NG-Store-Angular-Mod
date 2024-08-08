@@ -26,6 +26,7 @@ export class InicioComponent implements OnInit{
             return new Produto(
               item.id,
               item.nome,
+              item.pasta,
               item.preco,
               item.desconto,
               item.foto

@@ -3,6 +3,7 @@
         <tr>
             <th scope="col">Id</th>
             <th scope="col">Nome</th>
+            <th scope="col">Pasta</th>
             <th scope="col">Foto</th>
             <th scope="col">Preço</th>
             <th scope="col">Desconto</th> 
@@ -14,7 +15,8 @@
         <tr *ngFor="let p of produtos">
             <th scope="row">{{ p.id }}</th>
             <td>{{ p.nome }}</td>
-            <td><img mat-card-image src="./assets/img/{{ p.foto }}" alt="produto"></td>
+            <td>{{ p.pasta }}</td>
+            <td><img mat-card-image src="./assets/img/games/{{p.pasta}}/{{ p.foto }}" alt="produto"></td>
             <td>{{ p.preco | currency: 'BRL' }}</td>
             <td>{{ p.desconto }}</td>
             <td>

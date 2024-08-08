@@ -1,37 +1,4 @@
 <main>
-    
-    <!-- Cards Lançamentos -->
-    <mat-grid-list cols="5" class="grid-container">
-        <header class="products-dock-header">
-            <div>
-              <h2 class="products-dock-title">Lançamentos</h2>
-              <a class="btn__primary btn__small" href="/vermais.html">Ver mais</a>
-            </div>
-            <h3 class="products-dock-subtitle">Aproveite os últimos lançamentos!</h3>
-        </header>
-
-        <mat-grid-tile *ngFor="let produto of produtos">
-            <!-- Card -->
-            <mat-card class="game-card" appearance="outlined">
-                <img mat-card-image src="assets/img/games/lancamentos/{{produto.foto}}" title="{{produto.nome}}" alt="{{produto.nome}}">
-
-                <mat-card-title class="single-line-name" title="{{produto.nome}}">{{produto.nome}}</mat-card-title>
-    
-                <mat-card-actions>
-                    <span class="desconto" title="Desconto">-{{produto.desconto}}%</span>
-                    <button class="product-button" title="Comprar"> {{produto.preco | currency: 'BRL'}}</button>
-                    <span class="add-favoritos">
-                        <a href="">
-                            <img src="assets/img/icones/icone-favoritos.png" title="Favoritos" alt="icone-favoritos">
-                        </a>
-                    </span>
-                </mat-card-actions>                  
-            </mat-card>
-
-        </mat-grid-tile>
-
-    </mat-grid-list>
-
     <!-- Banner 1 -->
     <section id="section-banner" class="container grid-container">
         <div id="carouselExampleAutoplaying-1" class="carousel slide" data-bs-ride="carousel">
@@ -60,6 +27,39 @@
         </div>
     </section>
 
+    <!-- Cards Ofertas Especiais -->
+    <mat-grid-list cols="5" class="grid-container">
+        <header class="products-dock-header">
+            <div>
+                <h2 class="products-dock-title">Ofertas Especiais</h2>
+                <a class="btn__primary btn__small" href="/vermais.html">Ver mais</a>
+            </div>
+            <h3 class="products-dock-subtitle">Aproveite os nossos descontos!</h3>
+        </header>
+
+        <mat-grid-tile *ngFor="let produto of produtos">
+            <!-- Card -->
+            <mat-card class="game-card" appearance="outlined">
+                <img mat-card-image src="assets/img/games/{{produto.pasta}}/{{produto.foto}}" title="{{produto.nome}}"
+                    alt="{{produto.nome}}">
+
+                <mat-card-title class="single-line-name" title="{{produto.nome}}">{{produto.nome}}</mat-card-title>
+
+                <mat-card-actions>
+                    <span class="desconto" title="Desconto">-{{produto.desconto}}%</span>
+                    <button class="product-button" title="Comprar"> {{produto.preco | currency: 'BRL'}}</button>
+                    <span class="add-favoritos">
+                        <a href="">
+                            <img src="assets/img/icones/icone-favoritos.png" title="Favoritos" alt="icone-favoritos">
+                        </a>
+                    </span>
+                </mat-card-actions>
+            </mat-card>
+
+        </mat-grid-tile>
+
+    </mat-grid-list>
+
 
     <!-- Banner 2 -->
     <section id="section-banner" class="container grid-container">
@@ -72,7 +72,8 @@
                     <img src="assets/img/banners/manager-24.jpg" class="d-block w-100" alt="Banner Manor Lords">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/banners/mullet-mad-jack.jpg" class="d-block w-100" alt="Banner Mortal Kombat 11">
+                    <img src="assets/img/banners/mullet-mad-jack.jpg" class="d-block w-100"
+                        alt="Banner Mortal Kombat 11">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying-2"
@@ -88,32 +89,5 @@
         </div>
     </section>
 
-    <!-- Banner 3 -->
-    <section id="section-banner" class="container grid-container">
-        <div id="carouselExampleAutoplaying-3" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/banners/dying-light.jpg" class="d-block w-100" alt="Banner Dying Light">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/banners/manor-lords.jpg" class="d-block w-100" alt="Banner Manor Lords">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/banners/mortal-kombat-11.jpg" class="d-block w-100"
-                        alt="Banner Mortal Kombat 11">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying-3"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying-3"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
 
 </main>

@@ -2,8 +2,12 @@
     <h1>Cadastrar jogo</h1>
     <section id="section-cadastro">
         <form>
-            <label for="produto">Nome do Produto</label>
+            <label for="produto">Nome</label>
             <input type="text" class="form-control" name="produto" [(ngModel)]="produto.nome">
+            <br>
+
+            <label for="pasta">Pasta</label>
+            <input type="text" class="form-control" name="pasta" [(ngModel)]="produto.pasta">
             <br>
 
             <label for="foto">Foto</label>
